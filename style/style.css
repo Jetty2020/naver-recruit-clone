@@ -1,7 +1,54 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Outfit:wght@900&display=swap');
-/* 로고 폰트 900*/
-/* font-family: 'Outfit', sans-serif; */
-/* 바디 400, 700 */
-/* font-family: 'Nanum Gothic', sans-serif; */
+/* 로고 폰트 900/
+/ font-family: 'Outfit', sans-serif; /
+/ 바디 400, 700 /
+/ font-family: 'Nanum Gothic', sans-serif; */
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  color: white;
+  background-color: none;
+  /* background-color: burlywood; */
+  justify-content: space-between;
+  padding: 18px 20px 11px;
+  box-sizing: border-box;
+}
+.logo {
+  margin: 4px 0 28px;
+}
+.logo strong {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+}
+.logo em {
+  vertical-align: 2px;
+}
+.nav__btn--mobile {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: no-repeat url(/img/list.svg);
+  background-size: 100% 100%;
+}
+
+.nav__menu {
+  display: none;
+}
+
+main {
+  background-color: blanchedalmond;
+  margin-top: -70px;
+}
+.header-slide {
+  width: 100%;
+  height: 314px;
+  background: no-repeat url('../img/back1.png');
+  background-size: cover;
+}

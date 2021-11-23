@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>maber recruit</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header>
-      <h1><strong>MABER</strong> <em>Career</em></h1>
+    <header class="header">
+      <h1 class="logo">
+        <a href="javascript:void(0)"><strong>MABER</strong> <em>Career</em></a>
+      </h1>
       <nav>
-        <ul>
+        <button class="nav__btn--mobile">
+          <span class="txt-hide">홈페이지 메뉴</span>
+        </button>
+        <ul class="nav__menu">
           <li><a href="javascript:void(0)">내 지원서</a></li>
           <li><a href="javascript:void(0)">채용문의</a></li>
           <li><a href="javascript:void(0)">English</a></li>
@@ -21,21 +26,46 @@
     </header>
     <main>
       <section>
-        <header>
-          <h3>
-            <strong>BE ON THE FAST TRACK</strong>
-            <em>메이버 월간 영입 : 기술 직군</em>
-            <a href="javascript:void(0)">지원하기</a>
+        <h2 class="txt-hide">네이버 소개와 채용상황</h2>
+        <header class="header-slides">
+          <h3 class="slide">
+            <div class="slide1">
+              <strong class="slide__tit1">BE ON THE FAST TRACK</strong>
+              <em>메이버 월간 영입 : 기술 직군</em>
+              <a href="javascript:void(0)">지원하기</a>
+            </div>
+            <div class="slide2">
+              <strong class="slide__tit1"
+                >수 많은 사용자의 목소리에서<br />내 일의 자부심과 무게를
+                느낍니다</strong
+              >
+              <a href="javascript:void(0)">Naver에서 일한다는 것</a>
+            </div>
+            <div class="slide3">
+              <strong class="slide__tit1">BE ON THE FAST TRACK</strong>
+              <em>메이버 월간 영입 : 기술 직군</em>
+              <a href="javascript:void(0)">지원하기</a>
+            </div>
           </h3>
         </header>
         <ul>
-          <li><em>개발</em></li>
-          <li><em>설계(디자인)</em></li>
-          <li><em>콘텐츠&amp;서비스</em></li>
-          <li><em>경영지원</em></li>
+          <li>
+            <a href><em>개발</em></a>
+          </li>
+          <li>
+            <a href><em>설계(디자인)</em></a>
+          </li>
+          <li>
+            <a href><em>콘텐츠&amp;서비스</em></a>
+          </li>
+          <li>
+            <a href><em>경영지원</em></a>
+          </li>
         </ul>
       </section>
+
       <section>
+        <h2 class="txt-hide">네이버 문화</h2>
         <header>
           <h3>Culture Report</h3>
         </header>
