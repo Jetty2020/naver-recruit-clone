@@ -23,6 +23,7 @@
 }
 body {
   font-family: 'Nanum Gothic', sans-serif;
+  background: #f8f8f8;
 }
 .header {
   width: 100%;
@@ -189,3 +190,13 @@ main {
   vertical-align: -1px;
 }
 /* culture-sect */
+
+.culture-sect {
+  background-color: #eff0f2;
+  padding-top: 7px;
+}
+
+.culture-sect > div {
+  background-color: #fff;
+  padding: 0 20px;
+}
