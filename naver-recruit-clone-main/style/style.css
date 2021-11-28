@@ -4,7 +4,6 @@
 / font-family: 'Outfit', sans-serif; /
 / 바디 400, 700 /
 / font-family: 'Nanum Gothic', sans-serif; */
-
 @keyframes slides {
   0% {
     margin-left: 0;
@@ -67,27 +66,25 @@ main {
   position: relative;
   overflow: hidden;
 }
-.left-btn {
+.header-slides::before {
+  content: '';
   position: absolute;
-  top: 155px;
+  top: 143px;
   left: 7px;
   width: 25px;
-  height: 27px;
-  background: no-repeat 0 -12px url('../img/slide-left.svg');
+  height: 40px;
+  background: url('../img/slide-left.svg') no-repeat;
   background-size: cover;
-  border: none;
-  cursor: pointer;
 }
-.right-btn {
+.header-slides::after {
+  content: '';
   position: absolute;
-  top: 155px;
+  top: 143px;
   right: 7px;
   width: 25px;
-  height: 27px;
-  background: no-repeat 0 -12px url('../img/slide-right.svg');
+  height: 40px;
+  background: url('../img/slide-right.svg') no-repeat;
   background-size: cover;
-  border: none;
-  cursor: pointer;
 }
 .slide {
   display: flex;
@@ -133,6 +130,10 @@ main {
   font-size: 14px;
 }
 /* slide2 */
+.slide2 em {
+}
+.slide2 strong {
+}
 .slide2 a {
   margin-top: 20px;
   font-size: 14px;
@@ -171,6 +172,8 @@ main {
   background-color: #f2f2f2;
   content: '';
 }
+.category a {
+}
 .category em {
   font-size: 18px;
   font-weight: 500;
@@ -199,6 +202,7 @@ main {
   width: 100%;
   background-color: #fff;
   padding: 0 20px 40px;
+  
 }
 .culture-tit {
   font-size: 24px;
@@ -244,7 +248,7 @@ main {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  color: #000;
+  color: #000
 }
 .list-container li p {
   font-size: 14px;
@@ -260,123 +264,27 @@ main {
   padding: 30px 0;
   border-top: 1px solid #e6e6e6;
   font-size: 14px;
-  color: #b2b2b2;
+  color: #B2B2B2;
 }
 
 .footer details {
   display: none;
 }
 .footer small {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .footer small a:last-child {
   margin-top: 6px;
 }
 .footer div a:first-child::after {
-  content: ' ';
+  content: " ";
   display: inline-block;
   width: 1px;
   height: 14px;
-  background-color: #b2b2b2;
+  background-color: #B2B2B2;
   margin-left: 4px;
   vertical-align: -3px;
   /* vertical-align: bottom; */
-}
-
-@media all and (min-width: 980px) {
-  .header {
-    height: 63px;
-    color: #00cc49;
-    background-color: #fff;
-    padding: 19px calc(50vw - 490px) 11px;
-    border-bottom: 1px solid #dcdde0;
-  }
-  .logo {
-    margin: 2px 0 28px;
-  }
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 5px;
-  }
-  .nav__btn--mobile {
-    display: none;
-  }
-  .nav__menu {
-    display: flex;
-    font-size: 15px;
-    color: #000;
-  }
-  .nav__menu li {
-    margin-right: 17px;
-  }
-  .nav__menu li:first-child a::before {
-    content: '';
-    display: inline-block;
-    background-image: url('../img/person.svg');
-    width: 15px;
-    height: 15px;
-    margin-right: 6px;
-    vertical-align: -2px;
-  }
-  .nav__menu li:nth-child(2) a::before {
-    content: '';
-    display: inline-block;
-    background-image: url('../img/pencil.svg');
-    width: 15px;
-    height: 15px;
-    margin-right: 6px;
-    vertical-align: -2px;
-  }
-  .nav__menu li:nth-child(3) a {
-    color: #a1a1a1;
-  }
-
-  /* main */
-  main {
-    margin-top: 35px;
-    padding: 0 calc(50vw - 490px);
-  }
-  .slide {
-    height: 412px;
-  }
-  .slide > div {
-    padding-top: 147px;
-  }
-  .slide em,
-  .slide strong {
-    line-height: 70px;
-    /* letter-spacing: -1px; */
-    /* text-shadow: 2px 2px 6px rgb(0 0 0 / 40%); */
-  }
-  .slide1 em {
-    font-family: 'Outfit', sans-serif;
-    font-size: 66px;
-    font-weight: 700;
-    letter-spacing: 3px;
-  }
-
-  .left-btn {
-    top: 165px;
-    left: 7px;
-    width: 60px;
-    height: 65px;
-    background: no-repeat  url('../img/slide-web-left.svg');
-    background-size: contain;
-    
-    border: none;
-    cursor: pointer;
-  }
-  .right-btn {
-    top: 143px;
-    right: 7px;
-    width: 25px;
-    height: 27px;
-    background: no-repeat 0 -12px url('../img/slide-right.svg');
-    background-size: contain;
-    border: none;
-    cursor: pointer;
-  }
 }
